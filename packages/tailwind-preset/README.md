@@ -2,7 +2,7 @@
 
 Tailwind CSS preset and base styles for the [Open-Source Data Grid Design System](https://github.com/ZineddineBk09/Open-Source-Data-Grid-Design-System).
 
-**[Live demo](https://zineddinebk.github.io/Open-Source-Data-Grid-Design-System/)** · **[Source](https://github.com/ZineddineBk09/Open-Source-Data-Grid-Design-System)**
+**[Live demo](https://zineddinebk09.github.io/Open-Source-Data-Grid-Design-System/)** · **[Source](https://github.com/ZineddineBk09/Open-Source-Data-Grid-Design-System)**
 
 ## Install
 

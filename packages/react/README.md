@@ -2,7 +2,7 @@
 
 React adapter for the [Open-Source Data Grid Design System](https://github.com/ZineddineBk09/Open-Source-Data-Grid-Design-System) — a headless, enterprise-grade data grid for large datasets.
 
-**[Live demo](https://zineddinebk.github.io/Open-Source-Data-Grid-Design-System/)** · **[Storybook](https://zineddinebk.github.io/Open-Source-Data-Grid-Design-System/storybook/)** · **[Source](https://github.com/ZineddineBk09/Open-Source-Data-Grid-Design-System)**
+**[Live demo](https://zineddinebk09.github.io/Open-Source-Data-Grid-Design-System/)** · **[Storybook](https://zineddinebk09.github.io/Open-Source-Data-Grid-Design-System/storybook/)** · **[Source](https://github.com/ZineddineBk09/Open-Source-Data-Grid-Design-System)**
 
 ## Install
 

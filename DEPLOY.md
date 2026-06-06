@@ -32,8 +32,8 @@ git push -u origin main
 2. Under **Build and deployment**, set Source to **GitHub Actions**
 3. After the first push to `main`, the **Deploy Demo** workflow runs automatically
 4. Your site will be at:
-   - Demo: `https://zineddinebk.github.io/Open-Source-Data-Grid-Design-System/`
-   - Storybook: `https://zineddinebk.github.io/Open-Source-Data-Grid-Design-System/storybook/`
+   - Demo: `https://zineddinebk09.github.io/Open-Source-Data-Grid-Design-System/`
+   - Storybook: `https://zineddinebk09.github.io/Open-Source-Data-Grid-Design-System/storybook/`
 
 If Pages shows 404, check **Actions** tab for a green **Deploy Demo** run.
 
@@ -47,8 +47,8 @@ If Pages shows 404, check **Actions** tab for a green **Deploy Demo** run.
 
 | Link | URL |
 |------|-----|
-| Live demo | https://zineddinebk.github.io/Open-Source-Data-Grid-Design-System/ |
-| Storybook | https://zineddinebk.github.io/Open-Source-Data-Grid-Design-System/storybook/ |
+| Live demo | https://zineddinebk09.github.io/Open-Source-Data-Grid-Design-System/ |
+| Storybook | https://zineddinebk09.github.io/Open-Source-Data-Grid-Design-System/storybook/ |
 | Source | https://github.com/ZineddineBk09/Open-Source-Data-Grid-Design-System |
 
 ## Screenshots location

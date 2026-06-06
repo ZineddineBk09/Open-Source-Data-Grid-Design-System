@@ -5,7 +5,7 @@ A headless, enterprise-grade data grid component library for **React** and **Vue
 [![CI](https://github.com/ZineddineBk09/Open-Source-Data-Grid-Design-System/actions/workflows/ci.yml/badge.svg)](https://github.com/ZineddineBk09/Open-Source-Data-Grid-Design-System/actions/workflows/ci.yml)
 [![npm](https://img.shields.io/npm/v/@zineddinebk/grid-react?label=npm)](https://www.npmjs.com/package/@zineddinebk/grid-react)
 
-**Live demo:** [GitHub Pages](https://zineddinebk.github.io/Open-Source-Data-Grid-Design-System/) · **Storybook:** [Component docs](https://zineddinebk.github.io/Open-Source-Data-Grid-Design-System/storybook/) · **Source:** [GitHub](https://github.com/ZineddineBk09/Open-Source-Data-Grid-Design-System)
+**Live demo:** [GitHub Pages](https://zineddinebk09.github.io/Open-Source-Data-Grid-Design-System/) · **Storybook:** [Component docs](https://zineddinebk09.github.io/Open-Source-Data-Grid-Design-System/storybook/) · **Source:** [GitHub](https://github.com/ZineddineBk09/Open-Source-Data-Grid-Design-System)
 
 ## npm packages
 
@@ -210,7 +210,7 @@ Push to `main` triggers `.github/workflows/deploy-demo.yml`, which builds the de
 
 1. GitHub → **Settings** → **Pages** → Source: **GitHub Actions**
 2. Push to `main` — first deploy may take 2–3 minutes
-3. Live at `https://zineddinebk.github.io/Open-Source-Data-Grid-Design-System/`
+3. Live at `https://zineddinebk09.github.io/Open-Source-Data-Grid-Design-System/`
 
 See [DEPLOY.md](./DEPLOY.md) for full publish steps including git commands.
 
