@@ -1,5 +1,5 @@
 import { useCallback, useRef } from 'react';
-import type { GridStore } from '@zineddinebk09/grid-core';
+import type { GridStore } from '@zineddinebk/grid-core';
 
 interface UseColumnResizeOptions {
   columnId: string;

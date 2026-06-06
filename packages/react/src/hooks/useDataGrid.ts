@@ -7,7 +7,7 @@ import {
   type GridOptions,
   type GridStore,
   type GridStoreInstance,
-} from '@zineddinebk09/grid-core';
+} from '@zineddinebk/grid-core';
 
 export function useDataGrid<T>(options: GridOptions<T>, externalStore?: GridStoreInstance<T>) {
   const storeRef = useRef<GridStoreInstance<T> | null>(externalStore ?? null);

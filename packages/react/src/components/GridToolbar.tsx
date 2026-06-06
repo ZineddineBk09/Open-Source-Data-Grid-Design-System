@@ -1,6 +1,6 @@
 import { useSyncExternalStore } from 'react';
-import type { GridStore, Density } from '@zineddinebk09/grid-core';
-import { downloadCsv, exportToCsv, getSelectedRows } from '@zineddinebk09/grid-core';
+import type { GridStore, Density } from '@zineddinebk/grid-core';
+import { downloadCsv, exportToCsv, getSelectedRows } from '@zineddinebk/grid-core';
 import { ColumnFilterBar } from './ColumnFilterBar';
 
 interface GridToolbarProps<T> {

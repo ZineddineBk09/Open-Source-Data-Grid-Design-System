@@ -4,7 +4,7 @@ A headless, enterprise-grade data grid component library for **React** and **Vue
 
 [![CI](https://github.com/ZineddineBk09/Open-Source-Data-Grid-Design-System/actions/workflows/ci.yml/badge.svg)](https://github.com/ZineddineBk09/Open-Source-Data-Grid-Design-System/actions/workflows/ci.yml)
 
-**Live demo:** [GitHub Pages](https://zineddinebk09.github.io/Open-Source-Data-Grid-Design-System/) · **Storybook:** [Component docs](https://zineddinebk09.github.io/Open-Source-Data-Grid-Design-System/storybook/) · **Source:** [GitHub](https://github.com/ZineddineBk09/Open-Source-Data-Grid-Design-System)
+**Live demo:** [GitHub Pages](https://zineddinebk.github.io/Open-Source-Data-Grid-Design-System/) · **Storybook:** [Component docs](https://zineddinebk.github.io/Open-Source-Data-Grid-Design-System/storybook/) · **Source:** [GitHub](https://github.com/ZineddineBk09/Open-Source-Data-Grid-Design-System)
 
 ## Screenshots
 
@@ -55,10 +55,10 @@ flowchart TB
   end
 
   subgraph packages [Packages]
-    Core["@zineddinebk09/grid-core"]
-    ReactPkg["@zineddinebk09/grid-react"]
-    VuePkg["@zineddinebk09/grid-vue"]
-    Tailwind["@zineddinebk09/grid-tailwind-preset"]
+    Core["@zineddinebk/grid-core"]
+    ReactPkg["@zineddinebk/grid-react"]
+    VuePkg["@zineddinebk/grid-vue"]
+    Tailwind["@zineddinebk/grid-tailwind-preset"]
   end
 
   Storybook --> ReactPkg
@@ -70,7 +70,7 @@ flowchart TB
   VuePkg --> Tailwind
 ```
 
-**Headless core, styled adapters.** All grid behavior lives in `@zineddinebk09/grid-core` (Zustand store + pure pipeline functions). React and Vue packages are thin bindings with DOM rendering and accessibility.
+**Headless core, styled adapters.** All grid behavior lives in `@zineddinebk/grid-core` (Zustand store + pure pipeline functions). React and Vue packages are thin bindings with DOM rendering and accessibility.
 
 ## Tech Stack
 
@@ -81,7 +81,7 @@ flowchart TB
 - **Vite 6** for fast bundling
 - **Storybook 8** for component documentation
 - **Vitest** + **Playwright** for unit and e2e tests
-- **Changesets** for npm releases under `@zineddinebk09/*`
+- **Changesets** for npm releases under `@zineddinebk/*`
 - **pnpm + Turborepo** monorepo
 
 ## Quick Start
@@ -89,7 +89,7 @@ flowchart TB
 ### Install (from npm, after publish)
 
 ```bash
-pnpm add @zineddinebk09/grid-react @zineddinebk09/grid-tailwind-preset
+pnpm add @zineddinebk/grid-react @zineddinebk/grid-tailwind-preset
 ```
 
 ### Local development
@@ -105,8 +105,8 @@ pnpm storybook
 ### React
 
 ```tsx
-import { DataGrid } from '@zineddinebk09/grid-react';
-import '@zineddinebk09/grid-react/styles.css';
+import { DataGrid } from '@zineddinebk/grid-react';
+import '@zineddinebk/grid-react/styles.css';
 
 const columns = [
   { id: 'name', accessorKey: 'name', header: 'Name', enableSorting: true },
@@ -131,8 +131,8 @@ const columns = [
 
 ```vue
 <script setup>
-import { DataGrid } from '@zineddinebk09/grid-vue';
-import '@zineddinebk09/grid-vue/styles.css';
+import { DataGrid } from '@zineddinebk/grid-vue';
+import '@zineddinebk/grid-vue/styles.css';
 </script>
 
 <template>
@@ -154,9 +154,9 @@ Run `pnpm bundle-size` after building. Approximate gzipped sizes (vs alternative
 
 | Package | Gzip (KB) |
 |---------|-----------|
-| `@zineddinebk09/grid-core` | 5.8 |
-| `@zineddinebk09/grid-react` | 6.9 |
-| `@zineddinebk09/grid-vue` | 5.5 |
+| `@zineddinebk/grid-core` | 5.8 |
+| `@zineddinebk/grid-react` | 6.9 |
+| `@zineddinebk/grid-vue` | 5.5 |
 | `@tanstack/react-table` (headless only) | ~14 |
 | AG Grid Community (minimal) | ~180+ |
 
@@ -167,10 +167,10 @@ Run `pnpm bundle-size` after building. Approximate gzipped sizes (vs alternative
 │   ├── storybook/       # Storybook docs + showcase stories
 │   └── demo/            # Landing page + live demo (GitHub Pages)
 ├── packages/
-│   ├── core/            # @zineddinebk09/grid-core — headless engine
-│   ├── react/           # @zineddinebk09/grid-react — React components
-│   ├── vue/             # @zineddinebk09/grid-vue — Vue components
-│   └── tailwind-preset/ # @zineddinebk09/grid-tailwind-preset — design tokens
+│   ├── core/            # @zineddinebk/grid-core — headless engine
+│   ├── react/           # @zineddinebk/grid-react — React components
+│   ├── vue/             # @zineddinebk/grid-vue — Vue components
+│   └── tailwind-preset/ # @zineddinebk/grid-tailwind-preset — design tokens
 ├── e2e/                 # Playwright tests
 └── scripts/             # bundle-size, screenshot guide
 ```
@@ -196,13 +196,13 @@ Push to `main` triggers `.github/workflows/deploy-demo.yml`, which builds the de
 
 1. GitHub → **Settings** → **Pages** → Source: **GitHub Actions**
 2. Push to `main` — first deploy may take 2–3 minutes
-3. Live at `https://zineddinebk09.github.io/Open-Source-Data-Grid-Design-System/`
+3. Live at `https://zineddinebk.github.io/Open-Source-Data-Grid-Design-System/`
 
 See [DEPLOY.md](./DEPLOY.md) for full publish steps including git commands.
 
 ## Publishing to npm
 
-Packages publish under `@zineddinebk09/grid-*` via [Changesets](https://github.com/changesets/changesets). npm scopes must be **lowercase** (`@zineddinebk09`), even though your GitHub username is `ZineddineBk09`.
+Packages publish under `@zineddinebk/grid-*` via [Changesets](https://github.com/changesets/changesets). npm scopes must be **lowercase** (`@zineddinebk`), even though your GitHub username is `ZineddineBk09`.
 
 ```bash
 pnpm changeset          # describe your change
@@ -212,7 +212,7 @@ pnpm release            # build + publish (CI on main with NPM_TOKEN)
 
 ## Performance
 
-The virtual scroll stress test story renders **100,000 rows** with smooth scrolling. The data pipeline (filter → group → sort → paginate) runs as pure functions in `@zineddinebk09/grid-core`, keeping framework adapters lightweight.
+The virtual scroll stress test story renders **100,000 rows** with smooth scrolling. The data pipeline (filter → group → sort → paginate) runs as pure functions in `@zineddinebk/grid-core`, keeping framework adapters lightweight.
 
 ## Contributing
 

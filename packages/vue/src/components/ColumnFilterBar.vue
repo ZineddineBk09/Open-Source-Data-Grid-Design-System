@@ -1,6 +1,6 @@
 <script setup lang="ts" generic="T">
 import { ref, onMounted, onUnmounted, computed } from 'vue';
-import type { ColumnDef, FilterOperator, GridStore } from '@zineddinebk09/grid-core';
+import type { ColumnDef, FilterOperator, GridStore } from '@zineddinebk/grid-core';
 
 const OPERATORS: { value: FilterOperator; label: string }[] = [
   { value: 'contains', label: 'Contains' },

@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
-import { DataGrid, useDataGrid } from '@zineddinebk09/grid-react';
+import { DataGrid, useDataGrid } from '@zineddinebk/grid-react';
 import { employeeColumns, type Employee } from '../../src/sampleData';
 import { fetchServerData } from '../../src/mockApi';
 

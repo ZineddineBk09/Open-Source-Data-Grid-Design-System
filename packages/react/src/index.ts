@@ -6,4 +6,4 @@ export { useDataGrid } from './hooks/useDataGrid';
 export type { UseDataGridReturn } from './hooks/useDataGrid';
 export { useColumnResize } from './hooks/useColumnResize';
 export { useGridKeyboard } from './hooks/useGridKeyboard';
-export * from '@zineddinebk09/grid-core';
+export * from '@zineddinebk/grid-core';

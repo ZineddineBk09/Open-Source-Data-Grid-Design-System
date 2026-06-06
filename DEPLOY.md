@@ -32,8 +32,8 @@ git push -u origin main
 2. Under **Build and deployment**, set Source to **GitHub Actions**
 3. After the first push to `main`, the **Deploy Demo** workflow runs automatically
 4. Your site will be at:
-   - Demo: `https://zineddinebk09.github.io/Open-Source-Data-Grid-Design-System/`
-   - Storybook: `https://zineddinebk09.github.io/Open-Source-Data-Grid-Design-System/storybook/`
+   - Demo: `https://zineddinebk.github.io/Open-Source-Data-Grid-Design-System/`
+   - Storybook: `https://zineddinebk.github.io/Open-Source-Data-Grid-Design-System/storybook/`
 
 If Pages shows 404, check **Actions** tab for a green **Deploy Demo** run.
 
@@ -47,8 +47,8 @@ If Pages shows 404, check **Actions** tab for a green **Deploy Demo** run.
 
 | Link | URL |
 |------|-----|
-| Live demo | https://zineddinebk09.github.io/Open-Source-Data-Grid-Design-System/ |
-| Storybook | https://zineddinebk09.github.io/Open-Source-Data-Grid-Design-System/storybook/ |
+| Live demo | https://zineddinebk.github.io/Open-Source-Data-Grid-Design-System/ |
+| Storybook | https://zineddinebk.github.io/Open-Source-Data-Grid-Design-System/storybook/ |
 | Source | https://github.com/ZineddineBk09/Open-Source-Data-Grid-Design-System |
 
 ## Screenshots location
@@ -69,7 +69,7 @@ Vite copies `public/` into the build output — do **not** use `apps/demo/screen
 
 ## npm publish (optional — not needed for GitHub Pages)
 
-Your **live demo and Storybook do not require npm**. Skip this entire section unless you want `@zineddinebk09/grid-*` on npmjs.com.
+Your **live demo and Storybook do not require npm**. Skip this entire section unless you want `@zineddinebk/grid-*` on npmjs.com.
 
 ### If the publish workflow failed with "not permitted to create pull requests"
 
@@ -105,6 +105,6 @@ If the checkbox is unavailable (some orgs block it):
 1. `npm login` locally
 2. Add secret `NPM_TOKEN` in repo **Settings → Secrets → Actions**
 3. Merge the version PR (or run `pnpm version-packages` locally and push)
-4. **Actions → Publish Packages → Run workflow** — publishes `@zineddinebk09/grid-*`
+4. **Actions → Publish Packages → Run workflow** — publishes `@zineddinebk/grid-*`
 
 The publish workflow is **manual only** (`workflow_dispatch`) so it won't fail CI on every push.

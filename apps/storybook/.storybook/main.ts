@@ -20,9 +20,9 @@ const config: StorybookConfig = {
       plugins: [vue()],
       resolve: {
         alias: {
-          '@zineddinebk09/grid-react': resolve(__dirname, '../../../packages/react/src'),
-          '@zineddinebk09/grid-vue': resolve(__dirname, '../../../packages/vue/src'),
-          '@zineddinebk09/grid-core': resolve(__dirname, '../../../packages/core/src'),
+          '@zineddinebk/grid-react': resolve(__dirname, '../../../packages/react/src'),
+          '@zineddinebk/grid-vue': resolve(__dirname, '../../../packages/vue/src'),
+          '@zineddinebk/grid-core': resolve(__dirname, '../../../packages/core/src'),
         },
       },
     });

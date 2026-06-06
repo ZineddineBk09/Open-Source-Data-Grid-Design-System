@@ -12,10 +12,10 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const root = resolve(__dirname, '..');
 
 const packages = [
-  { name: '@zineddinebk09/grid-core', path: 'packages/core/dist/index.js' },
-  { name: '@zineddinebk09/grid-react', path: 'packages/react/dist/index.js' },
-  { name: '@zineddinebk09/grid-vue', path: 'packages/vue/dist/index.js' },
-  { name: '@zineddinebk09/grid-tailwind-preset', path: 'packages/tailwind-preset/dist/index.js' },
+  { name: '@zineddinebk/grid-core', path: 'packages/core/dist/index.js' },
+  { name: '@zineddinebk/grid-react', path: 'packages/react/dist/index.js' },
+  { name: '@zineddinebk/grid-vue', path: 'packages/vue/dist/index.js' },
+  { name: '@zineddinebk/grid-tailwind-preset', path: 'packages/tailwind-preset/dist/index.js' },
 ];
 
 function kb(bytes) {

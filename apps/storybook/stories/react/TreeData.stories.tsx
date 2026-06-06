@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { DataGrid } from '@zineddinebk09/grid-react';
+import { DataGrid } from '@zineddinebk/grid-react';
 import { generateEmployees, employeeColumns, type Employee } from '../../src/sampleData';
 
 interface OrgNode {

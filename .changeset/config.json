@@ -4,7 +4,7 @@
   "commit": false,
   "fixed": [],
   "linked": [
-    ["@zineddinebk09/grid-core", "@zineddinebk09/grid-react", "@zineddinebk09/grid-vue", "@zineddinebk09/grid-tailwind-preset"]
+    ["@zineddinebk/grid-core", "@zineddinebk/grid-react", "@zineddinebk/grid-vue", "@zineddinebk/grid-tailwind-preset"]
   ],
   "access": "public",
   "baseBranch": "main",

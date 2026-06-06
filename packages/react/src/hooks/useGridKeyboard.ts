@@ -1,5 +1,5 @@
 import { useCallback } from 'react';
-import { getKeyboardCommand, moveFocus, isEditableElement, type GridStore } from '@zineddinebk09/grid-core';
+import { getKeyboardCommand, moveFocus, isEditableElement, type GridStore } from '@zineddinebk/grid-core';
 
 interface UseGridKeyboardOptions<T> {
   store: { getState: () => GridStore<T> };

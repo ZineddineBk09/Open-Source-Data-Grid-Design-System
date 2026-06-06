@@ -24,7 +24,7 @@ pnpm typecheck  # TypeScript check
 
 ## Guidelines
 
-1. **Keep core framework-agnostic** — All grid logic belongs in `@zineddinebk09/grid-core`
+1. **Keep core framework-agnostic** — All grid logic belongs in `@zineddinebk/grid-core`
 2. **Maintain React/Vue parity** — New features should work in both adapters
 3. **Add Storybook stories** — Every new feature needs a story demonstrating it
 4. **Write tests** — Core pipeline functions require Vitest unit tests

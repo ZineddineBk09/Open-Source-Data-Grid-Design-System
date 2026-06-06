@@ -1,5 +1,5 @@
 {
-  "name": "@zineddinebk09/grid-vue",
+  "name": "@zineddinebk/grid-vue",
   "version": "0.1.0",
   "type": "module",
   "publishConfig": {
@@ -24,10 +24,10 @@
     "lint": "eslint src"
   },
   "dependencies": {
-    "@zineddinebk09/grid-core": "workspace:*"
+    "@zineddinebk/grid-core": "workspace:*"
   },
   "devDependencies": {
-    "@zineddinebk09/grid-tailwind-preset": "workspace:*",
+    "@zineddinebk/grid-tailwind-preset": "workspace:*",
     "@vitejs/plugin-vue": "^5.2.4",
     "@vue/test-utils": "^2.4.6",
     "jsdom": "^26.1.0",

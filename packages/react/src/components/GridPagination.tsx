@@ -1,4 +1,4 @@
-import type { GridStore } from '@zineddinebk09/grid-core';
+import type { GridStore } from '@zineddinebk/grid-core';
 
 interface GridPaginationProps<T> {
   store: { getState: () => GridStore<T> };

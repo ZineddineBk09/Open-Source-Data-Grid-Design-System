@@ -19,7 +19,7 @@ export default defineConfig({
       fileName: 'index',
     },
     rollupOptions: {
-      external: ['vue', '@zineddinebk09/grid-core'],
+      external: ['vue', '@zineddinebk/grid-core'],
     },
   },
 });

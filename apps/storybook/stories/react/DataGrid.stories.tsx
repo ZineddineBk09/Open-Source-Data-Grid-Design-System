@@ -1,6 +1,6 @@
 import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
-import { DataGrid } from '@zineddinebk09/grid-react';
+import { DataGrid } from '@zineddinebk/grid-react';
 import { generateEmployees, employeeColumns, type Employee } from '../../src/sampleData';
 
 const meta: Meta<typeof DataGrid> = {

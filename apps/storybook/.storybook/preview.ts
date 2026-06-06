@@ -1,6 +1,6 @@
 import type { Preview } from '@storybook/react';
-import '@zineddinebk09/grid-react/styles.css';
-import '@zineddinebk09/grid-vue/styles.css';
+import '@zineddinebk/grid-react/styles.css';
+import '@zineddinebk/grid-vue/styles.css';
 
 const preview: Preview = {
   parameters: {

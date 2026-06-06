@@ -16,7 +16,7 @@ import {
   type GridTheme,
   type RowModel,
   type ColumnDef,
-} from '@zineddinebk09/grid-core';
+} from '@zineddinebk/grid-core';
 import { useDataGrid } from '../composables/useDataGrid';
 import ColumnFilterBar from './ColumnFilterBar.vue';
 

@@ -1,5 +1,5 @@
 import { useSyncExternalStore } from 'react';
-import type { ColumnDef, FilterOperator, GridStore } from '@zineddinebk09/grid-core';
+import type { ColumnDef, FilterOperator, GridStore } from '@zineddinebk/grid-core';
 
 const OPERATORS: { value: FilterOperator; label: string }[] = [
   { value: 'contains', label: 'Contains' },

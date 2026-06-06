@@ -18,7 +18,7 @@ import {
   type GridOptions,
   type GridTheme,
   type RowModel,
-} from '@zineddinebk09/grid-core';
+} from '@zineddinebk/grid-core';
 import { useDataGrid } from '../hooks/useDataGrid';
 import { useColumnResize } from '../hooks/useColumnResize';
 import { useGridKeyboard } from '../hooks/useGridKeyboard';
@@ -34,7 +34,7 @@ export interface DataGridProps<T> extends GridOptions<T> {
   showPagination?: boolean;
   showColumnFilters?: boolean;
   isLoading?: boolean;
-  store?: import('@zineddinebk09/grid-core').GridStoreInstance<T>;
+  store?: import('@zineddinebk/grid-core').GridStoreInstance<T>;
   toolbar?: ReactNode;
   onCellEdit?: (rowId: string, columnId: string, value: unknown) => void;
   onRowSelectionChange?: (selection: Record<string, boolean>) => void;
@@ -71,10 +71,10 @@ function HeaderCell<T>({
   onDragStart,
   onDragOver,
   onDrop,
-}: Omit<HeaderCellProps<T>, 'onResize'> & { store: { getState: () => import('@zineddinebk09/grid-core').GridStore<T> } }) {
+}: Omit<HeaderCellProps<T>, 'onResize'> & { store: { getState: () => import('@zineddinebk/grid-core').GridStore<T> } }) {
   const { onMouseDown } = useColumnResize({
     columnId: column.id,
-    store: store as { getState: () => import('@zineddinebk09/grid-core').GridStore<unknown> },
+    store: store as { getState: () => import('@zineddinebk/grid-core').GridStore<unknown> },
     minSize: column.minSize,
     maxSize: column.maxSize,
   });

@@ -1,7 +1,7 @@
 import { StrictMode, useCallback, useState } from 'react';
 import { createRoot } from 'react-dom/client';
-import { DataGrid } from '@zineddinebk09/grid-react';
-import '@zineddinebk09/grid-react/styles.css';
+import { DataGrid } from '@zineddinebk/grid-react';
+import '@zineddinebk/grid-react/styles.css';
 import { generateEmployees, employeeColumns } from './data';
 import './demo.css';
 
@@ -144,7 +144,7 @@ function App() {
           {' · '}
           MIT License
         </p>
-        <p className="demo-footer__meta">@zineddinebk09/grid-react · pnpm · Turborepo · Vitest · Playwright</p>
+        <p className="demo-footer__meta">@zineddinebk/grid-react · pnpm · Turborepo · Vitest · Playwright</p>
       </footer>
     </div>
   );

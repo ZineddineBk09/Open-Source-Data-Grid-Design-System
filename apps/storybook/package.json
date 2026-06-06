@@ -10,10 +10,10 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "@zineddinebk09/grid-core": "workspace:*",
-    "@zineddinebk09/grid-react": "workspace:*",
-    "@zineddinebk09/grid-vue": "workspace:*",
-    "@zineddinebk09/grid-tailwind-preset": "workspace:*",
+    "@zineddinebk/grid-core": "workspace:*",
+    "@zineddinebk/grid-react": "workspace:*",
+    "@zineddinebk/grid-vue": "workspace:*",
+    "@zineddinebk/grid-tailwind-preset": "workspace:*",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "vue": "^3.5.16"

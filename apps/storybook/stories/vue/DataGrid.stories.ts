@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/vue3';
-import { DataGrid } from '@zineddinebk09/grid-vue';
+import { DataGrid } from '@zineddinebk/grid-vue';
 import { generateEmployees, employeeColumns, type Employee } from '../../src/sampleData';
 
 const meta = {

@@ -6,7 +6,7 @@ import { Meta } from '@storybook/blocks';
 
 A headless, high-performance data grid for **React** and **Vue** — built for enterprise applications handling large datasets.
 
-**Live demo:** [GitHub Pages](https://zineddinebk09.github.io/Open-Source-Data-Grid-Design-System/) · **Source:** [GitHub](https://github.com/ZineddineBk09/Open-Source-Data-Grid-Design-System)
+**Live demo:** [GitHub Pages](https://zineddinebk.github.io/Open-Source-Data-Grid-Design-System/) · **Source:** [GitHub](https://github.com/ZineddineBk09/Open-Source-Data-Grid-Design-System)
 
 ## Features
 
@@ -39,17 +39,17 @@ A headless, high-performance data grid for **React** and **Vue** — built for e
 ## Architecture
 
 ```
-@zineddinebk09/grid-core              Headless engine (Zustand store, pipeline, utils)
-@zineddinebk09/grid-react             React DataGrid component + hooks
-@zineddinebk09/grid-vue               Vue DataGrid component + composables
-@zineddinebk09/grid-tailwind-preset   Design tokens and utility classes
+@zineddinebk/grid-core              Headless engine (Zustand store, pipeline, utils)
+@zineddinebk/grid-react             React DataGrid component + hooks
+@zineddinebk/grid-vue               Vue DataGrid component + composables
+@zineddinebk/grid-tailwind-preset   Design tokens and utility classes
 ```
 
 ## Quick Start (React)
 
 ```tsx
-import { DataGrid } from '@zineddinebk09/grid-react';
-import '@zineddinebk09/grid-react/styles.css';
+import { DataGrid } from '@zineddinebk/grid-react';
+import '@zineddinebk/grid-react/styles.css';
 
 <DataGrid
   data={employees}
@@ -67,8 +67,8 @@ import '@zineddinebk09/grid-react/styles.css';
 
 ```vue
 <script setup>
-import { DataGrid } from '@zineddinebk09/grid-vue';
-import '@zineddinebk09/grid-vue/styles.css';
+import { DataGrid } from '@zineddinebk/grid-vue';
+import '@zineddinebk/grid-vue/styles.css';
 </script>
 
 <template>

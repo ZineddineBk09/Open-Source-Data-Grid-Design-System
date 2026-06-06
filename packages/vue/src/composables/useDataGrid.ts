@@ -8,7 +8,7 @@ import {
   type GridState,
   type GridStore,
   type GridStoreInstance,
-} from '@zineddinebk09/grid-core';
+} from '@zineddinebk/grid-core';
 
 type OptionsInput<T> = Ref<GridOptions<T>> | ComputedRef<GridOptions<T>> | GridOptions<T>;
 
