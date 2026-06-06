@@ -1,13 +1,9 @@
 name: Publish Packages
 
+# Manual only — avoids CI failures until GitHub allows Actions to open PRs.
+# See DEPLOY.md → "npm publish (optional)" for setup.
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - '.changeset/**'
-      - '.github/workflows/publish.yml'
-      - 'packages/**'
 
 permissions:
   contents: write
@@ -44,5 +40,6 @@ jobs:
           commit: 'chore: version packages'
           title: 'chore: version packages'
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Use a PAT if repo blocks Actions from opening PRs (see DEPLOY.md)
+          GITHUB_TOKEN: ${{ secrets.CHANGESET_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
