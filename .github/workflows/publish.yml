@@ -4,6 +4,15 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
+    paths:
+      - '.changeset/**'
+      - '.github/workflows/publish.yml'
+      - 'packages/**'
+
+permissions:
+  contents: write
+  pull-requests: write
+  id-token: write
 
 concurrency:
   group: publish-${{ github.ref }}
@@ -11,11 +20,7 @@ concurrency:
 
 jobs:
   release:
-    if: github.repository == 'zineddinebk09/Open-Source-Data-Grid-Design-System'
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      id-token: write
     steps:
       - uses: actions/checkout@v4
 
