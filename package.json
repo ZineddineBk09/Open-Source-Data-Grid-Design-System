@@ -1,6 +1,16 @@
 {
   "name": "osdg",
   "private": true,
+  "description": "Headless data grid design system for React and Vue",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ZineddineBk09/Open-Source-Data-Grid-Design-System.git"
+  },
+  "homepage": "https://zineddinebk.github.io/Open-Source-Data-Grid-Design-System/",
+  "bugs": {
+    "url": "https://github.com/ZineddineBk09/Open-Source-Data-Grid-Design-System/issues"
+  },
   "type": "module",
   "scripts": {
     "build": "turbo run build",

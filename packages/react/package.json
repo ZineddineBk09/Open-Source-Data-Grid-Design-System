@@ -6,7 +6,7 @@
   "author": "ZineddineBk09",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ZineddineBk09/Open-Source-Data-Grid-Design-System.git",
+    "url": "https://github.com/ZineddineBk09/Open-Source-Data-Grid-Design-System.git",
     "directory": "packages/react"
   },
   "homepage": "https://zineddinebk.github.io/Open-Source-Data-Grid-Design-System/",

@@ -3,8 +3,22 @@
 A headless, enterprise-grade data grid component library for **React** and **Vue**, optimized for large datasets. Built with TypeScript, Zustand, Tailwind CSS, and Vite.
 
 [![CI](https://github.com/ZineddineBk09/Open-Source-Data-Grid-Design-System/actions/workflows/ci.yml/badge.svg)](https://github.com/ZineddineBk09/Open-Source-Data-Grid-Design-System/actions/workflows/ci.yml)
+[![npm](https://img.shields.io/npm/v/@zineddinebk/grid-react?label=npm)](https://www.npmjs.com/package/@zineddinebk/grid-react)
 
 **Live demo:** [GitHub Pages](https://zineddinebk.github.io/Open-Source-Data-Grid-Design-System/) · **Storybook:** [Component docs](https://zineddinebk.github.io/Open-Source-Data-Grid-Design-System/storybook/) · **Source:** [GitHub](https://github.com/ZineddineBk09/Open-Source-Data-Grid-Design-System)
+
+## npm packages
+
+| Package | npm |
+|---------|-----|
+| `@zineddinebk/grid-react` | [npm](https://www.npmjs.com/package/@zineddinebk/grid-react) |
+| `@zineddinebk/grid-vue` | [npm](https://www.npmjs.com/package/@zineddinebk/grid-vue) |
+| `@zineddinebk/grid-core` | [npm](https://www.npmjs.com/package/@zineddinebk/grid-core) |
+| `@zineddinebk/grid-tailwind-preset` | [npm](https://www.npmjs.com/package/@zineddinebk/grid-tailwind-preset) |
+
+```bash
+pnpm add @zineddinebk/grid-react @zineddinebk/grid-tailwind-preset
+```
 
 ## Screenshots
 
@@ -204,11 +218,26 @@ See [DEPLOY.md](./DEPLOY.md) for full publish steps including git commands.
 
 Packages publish under `@zineddinebk/grid-*` via [Changesets](https://github.com/changesets/changesets). npm scopes must be **lowercase** (`@zineddinebk`), even though your GitHub username is `ZineddineBk09`.
 
+Each package `package.json` includes a `repository` field pointing at this GitHub repo (with `directory` for monorepo packages). **GitHub shows linked npm packages on the repo sidebar only after a publish that includes that metadata** — the initial `0.1.0` release did not.
+
 ```bash
 pnpm changeset          # describe your change
 pnpm version-packages   # bump versions
 pnpm release            # build + publish (CI on main with NPM_TOKEN)
 ```
+
+### Link npm packages to this GitHub repo
+
+1. **Connect accounts** — [npm Settings → Connected Accounts → GitHub](https://www.npmjs.com/settings/~account/connections) → connect your `ZineddineBk09` GitHub account.
+2. **Republish with metadata** — publish `0.1.1` (or newer) so npm includes the `repository` field:
+   ```bash
+   pnpm build
+   pnpm changeset publish --otp=XXXXXX
+   git push origin main --tags
+   ```
+3. **Wait for indexing** — packages usually appear under the repo **Packages** section within a few hours. Check: [github.com/ZineddineBk09/Open-Source-Data-Grid-Design-System](https://github.com/ZineddineBk09/Open-Source-Data-Grid-Design-System) → right sidebar → **Packages**.
+
+If packages still do not appear after 24h, open any package on npm → **Settings** (package maintainer) → confirm the linked repository URL matches this repo.
 
 ## Performance
 
