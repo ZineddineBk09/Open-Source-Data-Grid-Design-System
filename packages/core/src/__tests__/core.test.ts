@@ -89,7 +89,7 @@ describe('applyGrouping', () => {
 
 describe('applyPagination', () => {
   it('paginates rows', () => {
-    const rows = data.map((r, i) => ({
+    const rows = data.map((r) => ({
       id: r.id,
       type: 'data' as const,
       original: r,

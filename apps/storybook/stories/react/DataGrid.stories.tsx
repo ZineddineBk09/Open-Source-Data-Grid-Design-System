@@ -15,6 +15,45 @@ type Story = StoryObj<typeof DataGrid<Employee>>;
 const data1k = generateEmployees(1000);
 const getRowId = (row: Employee) => row.id;
 
+function InlineEditingDemo() {
+  const [data, setData] = React.useState(data1k.slice(0, 50));
+  return (
+    <DataGrid<Employee>
+      data={data}
+      columns={employeeColumns}
+      getRowId={getRowId}
+      height={500}
+      onCellEdit={(rowId, columnId, value) => {
+        setData((prev: Employee[]) =>
+          prev.map((row: Employee) => (row.id === rowId ? { ...row, [columnId]: value } : row)),
+        );
+      }}
+    />
+  );
+}
+
+function UndoRedoEditingDemo() {
+  const [data, setData] = React.useState(data1k.slice(0, 30));
+  return (
+    <div>
+      <p style={{ margin: '0 0 8px', fontSize: 14, color: '#6b7280' }}>
+        Double-click to edit · Ctrl+Z undo · Ctrl+Shift+Z redo · Toolbar buttons also work
+      </p>
+      <DataGrid<Employee>
+        data={data}
+        columns={employeeColumns.slice(0, 4)}
+        getRowId={getRowId}
+        height={420}
+        onCellEdit={(rowId, columnId, value) => {
+          setData((prev) =>
+            prev.map((row) => (row.id === rowId ? { ...row, [columnId]: value } : row)),
+          );
+        }}
+      />
+    </div>
+  );
+}
+
 export const Basic: Story = {
   args: {
     data: data1k,
@@ -74,22 +113,7 @@ export const PinnedColumns: Story = {
 };
 
 export const InlineEditing: Story = {
-  render: () => {
-    const [data, setData] = React.useState(data1k.slice(0, 50));
-    return (
-      <DataGrid<Employee>
-        data={data}
-        columns={employeeColumns}
-        getRowId={getRowId}
-        height={500}
-        onCellEdit={(rowId, columnId, value) => {
-          setData((prev: Employee[]) =>
-            prev.map((row: Employee) => (row.id === rowId ? { ...row, [columnId]: value } : row)),
-          );
-        }}
-      />
-    );
-  },
+  render: () => <InlineEditingDemo />,
 };
 
 export const CustomCellRenderers: Story = {
@@ -229,25 +253,5 @@ export const CustomTheme: Story = {
 };
 
 export const UndoRedoEditing: Story = {
-  render: () => {
-    const [data, setData] = React.useState(data1k.slice(0, 30));
-    return (
-      <div>
-        <p style={{ margin: '0 0 8px', fontSize: 14, color: '#6b7280' }}>
-          Double-click to edit · Ctrl+Z undo · Ctrl+Shift+Z redo · Toolbar buttons also work
-        </p>
-        <DataGrid<Employee>
-          data={data}
-          columns={employeeColumns.slice(0, 4)}
-          getRowId={getRowId}
-          height={420}
-          onCellEdit={(rowId, columnId, value) => {
-            setData((prev) =>
-              prev.map((row) => (row.id === rowId ? { ...row, [columnId]: value } : row)),
-            );
-          }}
-        />
-      </div>
-    );
-  },
+  render: () => <UndoRedoEditingDemo />,
 };
