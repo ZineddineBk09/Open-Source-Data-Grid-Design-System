@@ -1,6 +1,19 @@
 {
   "name": "@zineddinebk/grid-core",
-  "version": "0.1.0",
+  "version": "0.1.1",
+  "description": "Headless data grid engine — sort, filter, group, tree data, virtual scroll, and edit history",
+  "license": "MIT",
+  "author": "ZineddineBk09",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZineddineBk09/Open-Source-Data-Grid-Design-System.git",
+    "directory": "packages/core"
+  },
+  "homepage": "https://zineddinebk.github.io/Open-Source-Data-Grid-Design-System/",
+  "bugs": {
+    "url": "https://github.com/ZineddineBk09/Open-Source-Data-Grid-Design-System/issues"
+  },
+  "keywords": ["data-grid", "table", "headless", "typescript", "zustand", "virtual-scroll"],
   "type": "module",
   "publishConfig": {
     "access": "public"

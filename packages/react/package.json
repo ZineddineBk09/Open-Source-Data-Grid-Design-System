@@ -1,6 +1,19 @@
 {
   "name": "@zineddinebk/grid-react",
-  "version": "0.1.0",
+  "version": "0.1.1",
+  "description": "React data grid component — virtual scroll, filters, pinning, tree data, and inline editing",
+  "license": "MIT",
+  "author": "ZineddineBk09",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZineddineBk09/Open-Source-Data-Grid-Design-System.git",
+    "directory": "packages/react"
+  },
+  "homepage": "https://zineddinebk.github.io/Open-Source-Data-Grid-Design-System/",
+  "bugs": {
+    "url": "https://github.com/ZineddineBk09/Open-Source-Data-Grid-Design-System/issues"
+  },
+  "keywords": ["data-grid", "react", "table", "typescript", "tailwind", "virtual-scroll", "datagrid"],
   "type": "module",
   "publishConfig": {
     "access": "public"

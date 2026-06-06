@@ -1,6 +1,19 @@
 {
   "name": "@zineddinebk/grid-tailwind-preset",
-  "version": "0.1.0",
+  "version": "0.1.1",
+  "description": "Tailwind CSS preset and design tokens for @zineddinebk/grid-react and @zineddinebk/grid-vue",
+  "license": "MIT",
+  "author": "ZineddineBk09",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZineddineBk09/Open-Source-Data-Grid-Design-System.git",
+    "directory": "packages/tailwind-preset"
+  },
+  "homepage": "https://zineddinebk.github.io/Open-Source-Data-Grid-Design-System/",
+  "bugs": {
+    "url": "https://github.com/ZineddineBk09/Open-Source-Data-Grid-Design-System/issues"
+  },
+  "keywords": ["tailwindcss", "tailwind", "design-tokens", "data-grid", "preset"],
   "type": "module",
   "publishConfig": {
     "access": "public"
