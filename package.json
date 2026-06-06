@@ -1,0 +1,35 @@
+{
+  "name": "osdg",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "typecheck": "turbo run typecheck",
+    "e2e": "playwright test",
+    "bundle-size": "node scripts/bundle-size.mjs",
+    "version-packages": "changeset version",
+    "release": "pnpm build && changeset publish",
+    "storybook": "turbo run storybook --filter=@osdg/storybook",
+    "format": "prettier --write \"**/*.{ts,tsx,vue,js,json,md,css}\""
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.29.4",
+    "@eslint/js": "^9.28.0",
+    "@playwright/test": "^1.52.0",
+    "eslint": "^9.28.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.20",
+    "globals": "^16.2.0",
+    "prettier": "^3.5.3",
+    "turbo": "^2.5.4",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.34.0"
+  },
+  "packageManager": "pnpm@10.33.4",
+  "engines": {
+    "node": ">=20"
+  }
+}

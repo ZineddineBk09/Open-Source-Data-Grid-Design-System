@@ -1,0 +1,94 @@
+import { Meta } from '@storybook/blocks';
+
+<Meta title="Docs/Getting Started" />
+
+# Open-Source Data Grid Design System
+
+A headless, high-performance data grid for **React** and **Vue** — built for enterprise applications handling large datasets.
+
+**Live demo:** [GitHub Pages](https://zineddinebk09.github.io/Open-Source-Data-Grid-Design-System/) · **Source:** [GitHub](https://github.com/ZineddineBk09/Open-Source-Data-Grid-Design-System)
+
+## Features
+
+- **Virtual scrolling** — smoothly render 100k+ rows
+- **Column filters** — per-column operators (contains, equals, gt/lt) + global search
+- **Sorting & grouping** — multi-column sort, expandable group rows
+- **Tree data** — nested expandable rows via `getSubRows`
+- **Column pinning** — sticky left/right columns with edge shadows
+- **Row selection** — single/multi select with shift-click range
+- **Inline editing** — double-click to edit; undo/redo (Ctrl+Z)
+- **Server-side mode** — manual pagination/sort/filter with loading states
+- **CSV export** — export selected or all rows
+- **Keyboard navigation** — arrow keys, space, enter, escape
+- **Accessibility** — ARIA grid roles, sort indicators, focus management
+- **Theming** — Tailwind CSS preset, density variants, dark mode, custom `theme` prop
+
+## Story index
+
+| Story | What it shows |
+|-------|----------------|
+| **Basic** | Default grid with global search |
+| **VirtualScrollStressTest** | 100,000 rows |
+| **ColumnFilters** | Per-column filter bar |
+| **PinnedColumns** | Sticky left/right columns |
+| **TreeData** | Expandable hierarchy |
+| **ServerSide** | Mock API + loading + debounced search |
+| **DarkMode** | Dark theme |
+| **UndoRedoEditing** | Inline edit history |
+
+## Architecture
+
+```
+@zineddinebk09/grid-core              Headless engine (Zustand store, pipeline, utils)
+@zineddinebk09/grid-react             React DataGrid component + hooks
+@zineddinebk09/grid-vue               Vue DataGrid component + composables
+@zineddinebk09/grid-tailwind-preset   Design tokens and utility classes
+```
+
+## Quick Start (React)
+
+```tsx
+import { DataGrid } from '@zineddinebk09/grid-react';
+import '@zineddinebk09/grid-react/styles.css';
+
+<DataGrid
+  data={employees}
+  columns={columns}
+  getRowId={(row) => row.id}
+  enableRowSelection
+  enableGlobalFilter
+  showColumnFilters
+  height={500}
+  onCellEdit={(rowId, columnId, value) => updateCell(rowId, columnId, value)}
+/>
+```
+
+## Quick Start (Vue)
+
+```vue
+<script setup>
+import { DataGrid } from '@zineddinebk09/grid-vue';
+import '@zineddinebk09/grid-vue/styles.css';
+</script>
+
+<template>
+  <DataGrid
+    :data="employees"
+    :columns="columns"
+    :get-row-id="(row) => row.id"
+    :show-column-filters="true"
+    :height="500"
+    @cell-edit="handleCellEdit"
+  />
+</template>
+```
+
+## Local development
+
+```bash
+git clone https://github.com/ZineddineBk09/Open-Source-Data-Grid-Design-System.git
+cd Open-Source-Data-Grid-Design-System
+pnpm install
+pnpm build
+pnpm storybook   # http://localhost:6006
+```
