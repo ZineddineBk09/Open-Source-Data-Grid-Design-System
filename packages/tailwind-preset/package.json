@@ -1,6 +1,6 @@
 {
   "name": "@zineddinebk09/grid-tailwind-preset",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "type": "module",
   "publishConfig": {
     "access": "public"
@@ -14,7 +14,10 @@
     },
     "./styles.css": "./src/styles.css"
   },
-  "files": ["dist", "src/styles.css"],
+  "files": [
+    "dist",
+    "src/styles.css"
+  ],
   "scripts": {
     "build": "tsup src/index.ts --format esm --dts --clean",
     "dev": "tsup src/index.ts --format esm --dts --watch",
